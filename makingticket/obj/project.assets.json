@@ -4452,23 +4452,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\prajwolm\\.nuget\\packages\\": {},
+    "C:\\Users\\maxte\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\prajwolm\\source\\repos\\makingticket\\makingticket\\makingticket.csproj",
+      "projectUniqueName": "C:\\Users\\maxte\\Source\\Repos\\jria\\makingticket\\makingticket.csproj",
       "projectName": "makingticket",
-      "projectPath": "C:\\Users\\prajwolm\\source\\repos\\makingticket\\makingticket\\makingticket.csproj",
-      "packagesPath": "C:\\Users\\prajwolm\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\prajwolm\\source\\repos\\makingticket\\makingticket\\obj\\",
+      "projectPath": "C:\\Users\\maxte\\Source\\Repos\\jria\\makingticket\\makingticket.csproj",
+      "packagesPath": "C:\\Users\\maxte\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\maxte\\Source\\Repos\\jria\\makingticket\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\prajwolm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\maxte\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -4477,6 +4477,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

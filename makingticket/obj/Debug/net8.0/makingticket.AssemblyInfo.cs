@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("makingticket")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7541a0145055a61b96041279cfa625c7a45c9585")]
 [assembly: System.Reflection.AssemblyProductAttribute("makingticket")]
 [assembly: System.Reflection.AssemblyTitleAttribute("makingticket")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

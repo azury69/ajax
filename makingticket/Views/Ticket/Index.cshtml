@@ -1,0 +1,18 @@
+﻿@model IEnumerable<makingticket.Models.Ticket>
+
+<h1>Ticket List</h1>
+
+<ul>
+    @foreach (var ticket in Model)
+    {
+        <li>
+            <!-- Button to view ticket details -->
+            <button class="view-details" data-id="@ticket.Id">@ticket.Name</button> - @ticket.Description
+        </li>
+    }
+</ul>
+
+<!-- This is where the ticket details will be displayed dynamically -->
+<div id="ticketDetailsContainer">
+    <p>Select a ticket to view details.</p>
+</div>
