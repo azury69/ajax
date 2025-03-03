@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using makingticket.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace makingticket.Service
 {
@@ -8,8 +9,19 @@ namespace makingticket.Service
         public static async Task Initialize(IServiceProvider serviceProvider)
         {
             var roleManager = serviceProvider.GetRequiredService<RoleManager<IdentityRole>>();
-            var userManager = serviceProvider.GetRequiredService<UserManager<IdentityUser>>();
+            var userManager = serviceProvider.GetRequiredService<UserManager<ApplicationUser>>();
+            // Remove all roles and users before seeding fresh data
+            var roles = await roleManager.Roles.ToListAsync();
+            foreach (var role in roles)
+            {
+                await roleManager.DeleteAsync(role);
+            }
 
+            var users = await userManager.Users.ToListAsync();
+            foreach (var user in users)
+            {
+                await userManager.DeleteAsync(user);
+            }
             var roleNames = new List<string> { "SuperAdmin", "Admin", "User" };
 
             foreach (var role in roleNames)
@@ -28,22 +40,28 @@ namespace makingticket.Service
             var adminPassword = "Admin@1";
             var userEmail = "user@infinite.com";
             var userPassword = "User@1";
-            await CreateUser(userManager, superAdminEmail, superAdminPassword, "SuperAdmin");
-            await CreateUser(userManager, adminEmail, adminPassword, "Admin");
-            await CreateUser(userManager, userEmail, userPassword, "User");
+            await CreateUser(userManager, superAdminEmail, superAdminPassword, "SuperAdmin", null);
+            await CreateUser(userManager, adminEmail, adminPassword, "Admin",superAdminEmail);
+            await CreateUser(userManager, userEmail, userPassword, "User",adminEmail);
         }
 
-        private static async Task CreateUser(UserManager<IdentityUser> userManager, string email, string password, string role)
+        private static async Task CreateUser(UserManager<ApplicationUser> userManager, string email, string password, string role, string? assignedByEmail)
         {
             var user = await userManager.FindByEmailAsync(email);
             if (user == null)
             {
-                user = new IdentityUser
+
+                user = new ApplicationUser
                 {
                     UserName = email,
                     Email = email,
                     EmailConfirmed = true
                 };
+                if (role != "SuperAdmin" && assignedByEmail != null)
+                {
+                    var assignedByUser = await userManager.FindByEmailAsync(assignedByEmail);
+                    user.AssignedById = assignedByUser?.Id;
+                }
                 var result = await userManager.CreateAsync(user, password);
                 if (result.Succeeded)
                 {
@@ -67,97 +85,15 @@ namespace makingticket.Service
                 {
                     await userManager.AddToRoleAsync(user, role);
                 }
+                if (role != "SuperAdmin" && assignedByEmail != null && user.AssignedById == null)
+                {
+                    var assignedByUser = await userManager.FindByEmailAsync(assignedByEmail);
+                    user.AssignedById = assignedByUser?.Id;
+                    await userManager.UpdateAsync(user);
+                }
             }
 
 
         }
     }
 }
-
-
-//public static async Task Initialize(IServiceProvider serviceProvider, UserManager<IdentityUser> userManager, RoleManager<IdentityRole> roleManager)
-//{
-//    using (var scope = serviceProvider.CreateScope())
-//    {
-
-//        var roleNames = new List<string> { "SuperUser", "AdminUser", "User" };
-
-//        foreach (var role in roleNames)
-//        {
-//            var roleExist = await roleManager.RoleExistsAsync(role);
-
-//            if (!roleExist)
-//            {
-//                await roleManager.CreateAsync(new IdentityRole(role));
-//            }
-
-
-//            var adminEmail = "admin@infinite.com";
-//            var adminPassword = "Admin@1";
-
-//            var admin = await userManager.FindByEmailAsync(adminEmail);
-//            if (admin == null)
-//            {
-//                admin = new IdentityUser
-//                {
-//                    UserName = adminEmail,
-//                    Email = adminEmail,
-
-//                };
-
-//                var result = await userManager.CreateAsync(admin, adminPassword);
-
-//                if (result.Succeeded)
-//                {
-//                    await userManager.AddToRoleAsync(admin, "SuperUser");
-//                }
-//            }
-
-//            var adminUserEmail = "adminuser@infinite.com";
-//            var adminUserPassword = "Adminuser@1";
-
-//            var adminUser = await userManager.FindByEmailAsync(adminUserEmail);
-//            if (adminUser == null)
-//            {
-//                adminUser = new IdentityUser
-//                {
-//                    UserName = adminUserEmail,
-//                    Email = adminUserEmail,
-
-//                };
-
-//                var result = await userManager.CreateAsync(adminUser, adminUserPassword);
-
-//                if (result.Succeeded)
-//                {
-//                    await userManager.AddToRoleAsync(adminUser, "AdminUser");
-//                }
-//            }
-
-//            //creating superadmin
-//            var UserEmail = "user@infinite.com";
-//            var UserPassword = "User@1";
-
-//            var User = await userManager.FindByEmailAsync(UserEmail);
-//            if (User == null)
-//            {
-//                User = new IdentityUser
-//                {
-//                    UserName = UserEmail,
-//                    Email = UserEmail,
-
-//                };
-
-//                var result = await userManager.CreateAsync(User, UserPassword);
-
-//                if (result.Succeeded)
-//                {
-//                    await userManager.AddToRoleAsync(User, "User");
-//                }
-//            }
-
-
-
-//        }
-//    }
-//}
