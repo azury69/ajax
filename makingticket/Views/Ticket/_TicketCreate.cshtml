@@ -1,0 +1,52 @@
+﻿@model makingticket.Models.Ticket
+
+<h2>Create a New Ticket</h2>
+<form id="createTicketForm" method="post">
+    <div class="form-group">
+        <label asp-for="Name" class="control-label">Ticket Name</label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Description" class="control-label">Description</label>
+        <textarea asp-for="Description" class="form-control"></textarea>
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="AssignedTo" class="control-label">Assign To</label>
+        <select asp-for="AssignedTo" class="form-control">
+            <option value="">Select a User</option>
+            @foreach (var user in ViewBag.Users as List<ApplicationUser>)
+            {
+                <option value="@user.UserName">@user.UserName</option>
+            }
+        </select>
+        <span asp-validation-for="AssignedTo" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="StoryPoints" class="control-label">Story Points</label>
+        <select asp-for="StoryPoints" class="form-control">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="5">5</option>
+            <option value="8">8</option>
+            <option value="13">13</option>
+        </select>
+        <span asp-validation-for="StoryPoints" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Status" class="control-label">Status</label>
+        <select asp-for="Status" class="form-control">
+            <option value="Working">Working</option>
+            <option value="Completed">Completed</option>
+        </select>
+        <span asp-validation-for="Status" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Create Ticket</button>
+</form>

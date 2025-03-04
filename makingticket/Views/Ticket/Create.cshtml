@@ -1,94 +1,63 @@
-﻿@model makingticket.Models.Ticket
+﻿@model IEnumerable<makingticket.Models.Ticket>
 
-<!-- Create Ticket Form -->
-<h1>Create a New Ticket</h1>
-<form id="createTicketForm" method="post">
-    <div class="form-group">
-        <label asp-for="Name" class="control-label"></label>
-        <input asp-for="Name" class="form-control" />
-        <span asp-validation-for="Name" class="text-danger"></span>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div id="ticketCreateContainer">
+                <!-- Ticket Create Form will load here via AJAX -->
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div id="ticketListContainer">
+                <!-- Ticket List will load here via AJAX -->
+            </div>
+        </div>
     </div>
-    <div class="form-group">
-        <label asp-for="Description" class="control-label"></label>
-        <textarea asp-for="Description" class="form-control"></textarea>
-        <span asp-validation-for="Description" class="text-danger"></span>
-    </div>
-    <button type="submit" class="btn btn-primary">Create Ticket</button>
-</form>
-
-<!-- Back to Ticket List -->
-<a href="@Url.Action("Index", "Ticket")">Back to Ticket List</a>
-
-<!-- Existing Ticket List (Rendered on page load) -->
-<h2>Current Ticket List</h2>
-<div id="ticketListContainer">
-    <ul>
-        @foreach (var ticket in ViewBag.Tickets)
-        {
-            <li>
-                <strong>@ticket.Name</strong> - @ticket.Description
-                <button class="view-details btn btn-info" data-id="@ticket.Id">View Details</button>
-            </li>
-        }
-    </ul>
-</div>
-
-<!-- Ticket Details Container (Will be updated dynamically) -->
-<h2>Ticket Details</h2>
-<div id="ticketDetailsContainer">
-    <p>Select a ticket to view details.</p>
 </div>
 
 @section Scripts {
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
-          $(document).ready(function () {
-            // Submit form via AJAX
-            $("#createTicketForm").submit(function (event) {
-                event.preventDefault();
+        $(document).ready(function () {
+            // Load the ticket create form into #ticketCreateContainer
+            $.get('@Url.Action("Create", "Ticket")', function (data) {
+                $('#ticketCreateContainer').html(data);
+            });
 
+            // Load the ticket list into #ticketListContainer
+            $.get('@Url.Action("Index", "Ticket")', function (data) {
+                $('#ticketListContainer').html(data);
+            });
+
+            // Handle form submission via AJAX
+            $(document).on('submit', '#createTicketForm', function (e) {
+                e.preventDefault();
                 var formData = $(this).serialize();
-
                 $.ajax({
-                    url: "/Ticket/Create",
-                    type: "POST",
+                    url: '@Url.Action("Create", "Ticket")',
+                    type: 'POST',
                     data: formData,
                     success: function (data) {
-                        // The 'data' here is the HTML partial view
-
-                        // Update the ticket details container with the returned ticket details
-                        $("#ticketDetailsContainer").html(data);
-
-                        // Append the new ticket to the ticket list (data comes from the updated list returned by the controller)
-                        var newTicketHtml = '<li><strong>' + $(data).find("h3").text() + '</strong> - ' + $(data).find("p").text() +
-                                             '<button class="view-details btn btn-info" data-id="' + data.Id + '">View Details</button></li>';
-                        $("#ticketListContainer ul").append(newTicketHtml);
-
-                        // Reset the form
-                        $("#createTicketForm")[0].reset();
+                        // After creating the ticket, update the ticket list
+                        $('#ticketListContainer').html(data);
+                        // Reload the Create Form
+                        $.get('@Url.Action("Create", "Ticket")', function (data) {
+                            $('#ticketCreateContainer').html(data);
+                        });
                     },
                     error: function () {
-                        $("#ticketDetailsContainer").html("<p class='text-danger'>Error creating ticket.</p>");
+                        alert("Error creating ticket.");
                     }
                 });
             });
 
-            // Handle the "View Details" button click to load ticket details dynamically
-            $(document).on("click", ".view-details", function () {
-                var ticketId = $(this).data("id");
-
-                $.ajax({
-                    url: "/Ticket/_TicketDetails/" + ticketId,
-                    type: "GET",
-                    success: function (data) {
-                        $("#ticketDetailsContainer").html(data);
-                    },
-                    error: function () {
-                        $("#ticketDetailsContainer").html("<p class='text-danger'>Error loading ticket details.</p>");
-                    }
+            // Handle viewing ticket details via AJAX
+            $(document).on('click', '.view-details', function () {
+                var ticketId = $(this).data('id');
+                $.get('@Url.Action("Details", "Ticket", new { id = "__id__" })'.replace('__id__', ticketId), function (data) {
+                    $('#ticketListContainer').html(data);
                 });
             });
         });
-
     </script>
 }

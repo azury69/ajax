@@ -1,17 +1,12 @@
 ﻿@model IEnumerable<makingticket.Models.Ticket>
 
-@{
-    ViewData["Title"] = "Ticket List";
-}
-
-<h2>Ticket List</h2>
-
-<ul>
+<h3>Ticket List</h3>
+<ul id="ticketList">
     @foreach (var ticket in Model)
     {
         <li>
             <strong>@ticket.Name</strong> - @ticket.Description
-            <a href="@Url.Action("Details", "Ticket", new { id = ticket.Id })" class="btn btn-info">View Details</a>
+            <button class="view-details btn btn-info" data-id="@ticket.Id">View Details</button>
         </li>
     }
 </ul>

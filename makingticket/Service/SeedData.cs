@@ -11,24 +11,23 @@ namespace makingticket.Service
             var roleManager = serviceProvider.GetRequiredService<RoleManager<IdentityRole>>();
             var userManager = serviceProvider.GetRequiredService<UserManager<ApplicationUser>>();
             // Remove all roles and users before seeding fresh data
-            var roles = await roleManager.Roles.ToListAsync();
-            foreach (var role in roles)
-            {
-                await roleManager.DeleteAsync(role);
-            }
+            //var roles = await roleManager.Roles.ToListAsync();
+            //foreach (var role in roles)
+            //{
+            //    await roleManager.DeleteAsync(role);
+            //}
 
-            var users = await userManager.Users.ToListAsync();
-            foreach (var user in users)
-            {
-                await userManager.DeleteAsync(user);
-            }
+            //var users = await userManager.Users.ToListAsync();
+            //foreach (var user in users)
+            //{
+            //    await userManager.DeleteAsync(user);
+            //}
             var roleNames = new List<string> { "SuperAdmin", "Admin", "User" };
 
             foreach (var role in roleNames)
             {
                 if (!await roleManager.RoleExistsAsync(role))
                 {
-                    //await roleManager.CreateAsync(new IdentityRole { Name = role });
                     await roleManager.CreateAsync(new IdentityRole(role));
                 }
             }

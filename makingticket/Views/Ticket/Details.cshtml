@@ -1,6 +1,16 @@
 ﻿@model makingticket.Models.Ticket
 
-<h1>@Model.Name</h1>
-<p>@Model.Description</p>
+@{
+    ViewData["Title"] = "Ticket Details";
+}
 
-<a href="@Url.Action("Index", "Ticket")">Back to Ticket List</a>
+<div class="container">
+    <h2>Ticket Details</h2>
+    <p><strong>Name:</strong> @Model.Name</p>
+    <p><strong>Description:</strong> @Model.Description</p>
+    <p><strong>Assigned To:</strong> @Model.AssignedTo</p>
+    <p><strong>Story Points:</strong> @Model.StoryPoints</p>
+    <p><strong>Status:</strong> @Model.Status</p>
+
+    <a href="@Url.Action("Index", "Ticket")" class="btn btn-primary">Back to Ticket List</a>
+</div>

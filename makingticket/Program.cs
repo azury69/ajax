@@ -10,7 +10,15 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(connectionString));
 
 
-builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
+builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
+    {
+        options.Password.RequireDigit = true; // Requires at least one number
+        options.Password.RequireLowercase = true; // Requires at least one lowercase letter
+        options.Password.RequireUppercase = true; // Requires at least one uppercase letter
+        options.Password.RequireNonAlphanumeric = false; // No special characters required
+        options.Password.RequiredLength = 6; // Minimum password length
+        options.Password.RequiredUniqueChars = 1; // Minimum unique characters
+    })
     .AddEntityFrameworkStores<ApplicationDbContext>()
     .AddDefaultTokenProviders();
 
@@ -49,7 +57,7 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Login}/{id?}");
+    pattern: "{controller=Account}/{action=Login}/{id?}");
 app.MapRazorPages();
 
 app.Run();
