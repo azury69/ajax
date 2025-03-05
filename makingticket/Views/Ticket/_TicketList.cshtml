@@ -1,12 +1,27 @@
-﻿@model IEnumerable<makingticket.Models.Ticket>
+﻿@model List<makingticket.Models.Ticket>
 
-<h3>Ticket List</h3>
-<ul id="ticketList">
-    @foreach (var ticket in Model)
-    {
-        <li>
-            <strong>@ticket.Name</strong> - @ticket.Description
-            <button class="view-details btn btn-info" data-id="@ticket.Id">View Details</button>
-        </li>
-    }
-</ul>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Assigned To</th>
+            <th>Story Points</th>
+            <th>Status</th>
+            <th>Created At</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var ticket in Model)
+        {
+            <tr>
+                <td>@ticket.Name</td>
+                <td>@ticket.Description</td>
+                <td>@ticket.AssignedTo</td>
+                <td>@ticket.StoryPoints</td>
+                <td>@ticket.Status</td>
+                <td>@ticket.CreatedAt.ToString("yyyy-MM-dd HH:mm")</td>
+            </tr>
+        }
+    </tbody>
+</table>

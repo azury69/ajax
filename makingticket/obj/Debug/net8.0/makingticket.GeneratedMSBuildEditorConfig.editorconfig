@@ -36,10 +36,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/maxte/Source/Repos/jria/makingticket/Views/Role/Index1.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxJbmRleDEuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/maxte/Source/Repos/jria/makingticket/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -56,16 +52,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlja2V0XENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/maxte/Source/Repos/jria/makingticket/Views/Ticket/Createpast.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlja2V0XENyZWF0ZXBhc3QuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/maxte/Source/Repos/jria/makingticket/Views/Ticket/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlja2V0XERldGFpbHMuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/maxte/Source/Repos/jria/makingticket/Views/Ticket/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlja2V0XEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/maxte/Source/Repos/jria/makingticket/Views/Ticket/_TicketCreate.cshtml]

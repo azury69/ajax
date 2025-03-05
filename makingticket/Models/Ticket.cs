@@ -7,7 +7,7 @@
         public string? Description { get; set; }
         public string? AssignedTo { get; set; }  // User assigned to this ticket
         public int StoryPoints { get; set; }    // Fibonacci story points
-        public string Status { get; set; }      // Status (Working/Completed)
-        public DateTime CreatedAt { get; set; } // Timestamp of when ticket was created
+        public string Status { get; set; } = "Working";     // Status (Working/Completed)
+        public DateTime CreatedAt { get; set; } =DateTime.Now;
     }
 }

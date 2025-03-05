@@ -1,60 +1,57 @@
 ﻿using makingticket.Data;
 using makingticket.Models;
-using Microsoft.AspNetCore.Authorization;
+using makingticket.ViewModels;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
-public class TicketController : Controller
+namespace makingticket.Controllers
 {
-    private readonly ApplicationDbContext _context;
-
-    public TicketController(ApplicationDbContext context)
+    public class TicketController : Controller
     {
-        _context = context;
-    }
+        private readonly ApplicationDbContext _context;
 
-    // GET: Create Ticket Form
-    [Authorize(Roles = "Admin,SuperAdmin")]
-    public IActionResult Create()
-    {
-        return View();
-    }
-
-    // POST: Create Ticket
-    [HttpPost]
-    [Authorize(Roles = "Admin,SuperAdmin")]
-    [ValidateAntiForgeryToken]
-    public IActionResult Create(Ticket ticket)
-    {
-        if (ModelState.IsValid)
+        public TicketController(ApplicationDbContext context)
         {
-            _context.Ticket.Add(ticket);
-            _context.SaveChanges();
-
-            // After saving, return the updated list of tickets
-            var tickets = _context.Ticket.ToList();
-            return PartialView("_TicketList", tickets); // Return updated ticket list
+            _context = context;
         }
 
-        return BadRequest("Error creating ticket.");
-    }
-
-    // GET: Ticket List
-    [Authorize(Roles = "Admin,User,SuperAdmin")]
-    public IActionResult Index()
-    {
-        var tickets = _context.Ticket.ToList();
-        return View(tickets);
-    }
-
-    // GET: Ticket Details by ID
-    [Authorize(Roles = "Admin,User,SuperAdmin")]
-    public IActionResult Details(int id)
-    {
-        var ticket = _context.Ticket.FirstOrDefault(t => t.Id == id);
-        if (ticket == null)
+        public IActionResult Create()
         {
-            return NotFound();
+            var users = _context.Users
+                .Select(u => new SelectListItem
+                {
+                    Value = u.Id.ToString(),
+                    Text = u.UserName
+                }).ToList();
+
+            var viewModel = new TicketViewModel
+            {
+                UserList = users
+            };
+
+            return View(viewModel);
         }
-        return PartialView("_TicketDetails", ticket); // Return ticket details as a partial view
+
+        [HttpPost]
+        public IActionResult Create(TicketViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                model.NewTicket.CreatedAt = DateTime.Now;
+                _context.Ticket.Add(model.NewTicket);
+                _context.SaveChanges();
+
+                // Fetch the updated list of tickets
+                var tickets = _context.Ticket.ToList();
+
+                // Return the updated ticket list as a partial view
+                return PartialView("_TicketList", tickets);
+            }
+
+            // If model state is invalid, return the form with errors
+            return PartialView("_TicketCreate", model);
+        }
+
+
     }
 }

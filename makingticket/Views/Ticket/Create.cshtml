@@ -1,63 +1,43 @@
-﻿@model IEnumerable<makingticket.Models.Ticket>
+﻿@model TicketViewModel
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-6">
-            <div id="ticketCreateContainer">
-                <!-- Ticket Create Form will load here via AJAX -->
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div id="ticketListContainer">
-                <!-- Ticket List will load here via AJAX -->
-            </div>
-        </div>
-    </div>
+<h2>Create Ticket</h2>
+
+<div id="ticketContainer">
+    @await Html.PartialAsync("_TicketCreate", Model)
 </div>
 
-@section Scripts {
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            // Load the ticket create form into #ticketCreateContainer
-            $.get('@Url.Action("Create", "Ticket")', function (data) {
-                $('#ticketCreateContainer').html(data);
-            });
+<h2>Ticket List</h2>
 
-            // Load the ticket list into #ticketListContainer
-            $.get('@Url.Action("Index", "Ticket")', function (data) {
-                $('#ticketListContainer').html(data);
-            });
+<div id="listContainer">
+    @await Html.PartialAsync("_TicketList", Model.Tickets)
+</div>
+@section Scripts{
 
-            // Handle form submission via AJAX
-            $(document).on('submit', '#createTicketForm', function (e) {
-                e.preventDefault();
-                var formData = $(this).serialize();
-                $.ajax({
-                    url: '@Url.Action("Create", "Ticket")',
-                    type: 'POST',
-                    data: formData,
-                    success: function (data) {
-                        // After creating the ticket, update the ticket list
-                        $('#ticketListContainer').html(data);
-                        // Reload the Create Form
-                        $.get('@Url.Action("Create", "Ticket")', function (data) {
-                            $('#ticketCreateContainer').html(data);
-                        });
-                    },
-                    error: function () {
-                        alert("Error creating ticket.");
+<script>
+    $(document).ready(function () {
+        $("#createTicketForm").submit(function (e) {
+            e.preventDefault(); // Prevent default form submission
+            var formData = $(this).serialize();  // Serialize the form data
+
+            $.ajax({
+                url: "@Url.Action("Create", "Ticket")",  // The action to call on the server
+                type: "POST",  // HTTP method (POST)
+                data: formData,  // The form data to send
+                success: function (response) {
+                    if (response) {
+                        alert("Ticket created successfully!");
+                        $("#createTicketForm")[0].reset();  // Reset the form
+                        $("#listContainer").html(response);  // Update ticket list in the #listContainer
+                    } else {
+                        alert("Error occurred while creating the ticket.");
                     }
-                });
-            });
-
-            // Handle viewing ticket details via AJAX
-            $(document).on('click', '.view-details', function () {
-                var ticketId = $(this).data('id');
-                $.get('@Url.Action("Details", "Ticket", new { id = "__id__" })'.replace('__id__', ticketId), function (data) {
-                    $('#ticketListContainer').html(data);
-                });
+                },
+                error: function () {
+                    alert("Error: Unable to submit the form.");
+                }
             });
         });
-    </script>
+    });
+</script>
+
 }
