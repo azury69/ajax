@@ -96,6 +96,7 @@ namespace makingticket.Controllers
         public async Task<IActionResult> Logout()
         {
             await _signInManager.SignOutAsync();
+            //HttpContent.Session.Clear();
             return RedirectToAction("Login");
         }
     }

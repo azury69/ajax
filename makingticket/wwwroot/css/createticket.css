@@ -1,0 +1,132 @@
+﻿/* General page styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    padding-top: 50px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #343a40;
+    text-align: center;
+}
+
+#ticketContainer {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.ticket-form {
+    width: 30%;
+    background-color: #ffffff;
+    border: 1px solid #e3e3e3;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+    .ticket-form:hover {
+        transform: scale(1.05);
+    }
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+    .form-group label {
+        font-weight: bold;
+        color: #495057;
+    }
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    background-color: #ffffff;
+}
+
+    .form-control:focus {
+        border-color: #007bff;
+        outline: none;
+    }
+
+.btn {
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
+}
+
+    .btn-primary:hover {
+        background-color: #0056b3;
+        border-color: #0056b3;
+    }
+
+#addTicketButton {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    background-color: #28a745;
+    color: white;
+    font-size: 16px;
+}
+
+    #addTicketButton:hover {
+        background-color: #218838;
+    }
+
+/* Styling for Ticket List Table */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 40px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+    .table th, .table td {
+        padding: 15px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .table th {
+        background-color: #007bff;
+        color: white;
+        font-size: 18px;
+    }
+
+    .table tr:hover {
+        background-color: #f1f1f1;
+    }
+
+    .table tbody tr:last-child {
+        border-bottom: none;
+    }
+
+.text-danger {
+    color: #dc3545;
+}
+
+@media (max-width: 768px) {
+    .ticket-form {
+        width: 100%;
+    }
+
+    #ticketContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Y72e0BOOs3Q9NtWYxAn1v2i593x3ciqA6dVqGBirQu8=",
+  "Hash": "eVhTXHfU21IZLts7mzFwhobrYl3hWkDneI97f7eHL7s=",
   "Source": "makingticket",
   "BasePath": "_content/makingticket",
   "Mode": "Default",
@@ -1319,6 +1319,69 @@
       "OriginalItemSpec": "C:\\Users\\maxte\\Source\\Repos\\jria\\makingticket\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\makingticket.bundle.scp.css"
     },
     {
+      "Identity": "C:\\Users\\maxte\\Source\\Repos\\jria\\makingticket\\wwwroot\\css\\auth.css",
+      "SourceId": "makingticket",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\maxte\\Source\\Repos\\jria\\makingticket\\wwwroot\\",
+      "BasePath": "_content/makingticket",
+      "RelativePath": "css/auth#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "y22noxxno1",
+      "Integrity": "tonkJwQ58mTBBiJsdUBi5tae8utTX7VFoaQwyofl8Bc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\auth.css"
+    },
+    {
+      "Identity": "C:\\Users\\maxte\\Source\\Repos\\jria\\makingticket\\wwwroot\\css\\createticket.css",
+      "SourceId": "makingticket",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\maxte\\Source\\Repos\\jria\\makingticket\\wwwroot\\",
+      "BasePath": "_content/makingticket",
+      "RelativePath": "css/createticket#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hgmo6yve0v",
+      "Integrity": "sYV7TLl8E4IiPSGCZz98GC25ddE3xlrW7Vd2nWJ5dys=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\createticket.css"
+    },
+    {
+      "Identity": "C:\\Users\\maxte\\Source\\Repos\\jria\\makingticket\\wwwroot\\css\\rolemanagement.css",
+      "SourceId": "makingticket",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\maxte\\Source\\Repos\\jria\\makingticket\\wwwroot\\",
+      "BasePath": "_content/makingticket",
+      "RelativePath": "css/rolemanagement#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "zpf6d4hnfo",
+      "Integrity": "6d1cI0qsbEfoTTnaQsFbyUvzRXhglwDfFVz1Zo6NdbI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\rolemanagement.css"
+    },
+    {
       "Identity": "C:\\Users\\maxte\\Source\\Repos\\jria\\makingticket\\wwwroot\\css\\site.css",
       "SourceId": "makingticket",
       "SourceType": "Discovered",
@@ -1333,8 +1396,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "c2tiyv64ts",
-      "Integrity": "pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0=",
+      "Fingerprint": "xnh1y51fo3",
+      "Integrity": "rXUGMLzSftoz16rRPocoRTe2gJLqGzuWUwO/aXZzAiE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -2581,8 +2644,8 @@
   ],
   "Endpoints": [
     {
-      "Route": "css/site.c2tiyv64ts.css",
-      "AssetFile": "C:\\Users\\maxte\\Source\\Repos\\jria\\makingticket\\wwwroot\\css\\site.css",
+      "Route": "css/auth.css",
+      "AssetFile": "C:\\Users\\maxte\\Source\\Repos\\jria\\makingticket\\wwwroot\\css\\auth.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2591,7 +2654,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "362"
+          "Value": "1566"
         },
         {
           "Name": "Content-Type",
@@ -2599,11 +2662,48 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0=\""
+          "Value": "\"tonkJwQ58mTBBiJsdUBi5tae8utTX7VFoaQwyofl8Bc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 26 Feb 2025 17:57:40 GMT"
+          "Value": "Wed, 05 Mar 2025 03:34:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-tonkJwQ58mTBBiJsdUBi5tae8utTX7VFoaQwyofl8Bc="
+        }
+      ]
+    },
+    {
+      "Route": "css/auth.y22noxxno1.css",
+      "AssetFile": "C:\\Users\\maxte\\Source\\Repos\\jria\\makingticket\\wwwroot\\css\\auth.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1566"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tonkJwQ58mTBBiJsdUBi5tae8utTX7VFoaQwyofl8Bc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 05 Mar 2025 03:34:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2613,15 +2713,179 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "c2tiyv64ts"
+          "Value": "y22noxxno1"
         },
         {
           "Name": "label",
-          "Value": "css/site.css"
+          "Value": "css/auth.css"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0="
+          "Value": "sha256-tonkJwQ58mTBBiJsdUBi5tae8utTX7VFoaQwyofl8Bc="
+        }
+      ]
+    },
+    {
+      "Route": "css/createticket.css",
+      "AssetFile": "C:\\Users\\maxte\\Source\\Repos\\jria\\makingticket\\wwwroot\\css\\createticket.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2403"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sYV7TLl8E4IiPSGCZz98GC25ddE3xlrW7Vd2nWJ5dys=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 05 Mar 2025 03:49:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-sYV7TLl8E4IiPSGCZz98GC25ddE3xlrW7Vd2nWJ5dys="
+        }
+      ]
+    },
+    {
+      "Route": "css/createticket.hgmo6yve0v.css",
+      "AssetFile": "C:\\Users\\maxte\\Source\\Repos\\jria\\makingticket\\wwwroot\\css\\createticket.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2403"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sYV7TLl8E4IiPSGCZz98GC25ddE3xlrW7Vd2nWJ5dys=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 05 Mar 2025 03:49:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hgmo6yve0v"
+        },
+        {
+          "Name": "label",
+          "Value": "css/createticket.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-sYV7TLl8E4IiPSGCZz98GC25ddE3xlrW7Vd2nWJ5dys="
+        }
+      ]
+    },
+    {
+      "Route": "css/rolemanagement.css",
+      "AssetFile": "C:\\Users\\maxte\\Source\\Repos\\jria\\makingticket\\wwwroot\\css\\rolemanagement.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1651"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6d1cI0qsbEfoTTnaQsFbyUvzRXhglwDfFVz1Zo6NdbI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 05 Mar 2025 03:46:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6d1cI0qsbEfoTTnaQsFbyUvzRXhglwDfFVz1Zo6NdbI="
+        }
+      ]
+    },
+    {
+      "Route": "css/rolemanagement.zpf6d4hnfo.css",
+      "AssetFile": "C:\\Users\\maxte\\Source\\Repos\\jria\\makingticket\\wwwroot\\css\\rolemanagement.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1651"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6d1cI0qsbEfoTTnaQsFbyUvzRXhglwDfFVz1Zo6NdbI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 05 Mar 2025 03:46:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zpf6d4hnfo"
+        },
+        {
+          "Name": "label",
+          "Value": "css/rolemanagement.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6d1cI0qsbEfoTTnaQsFbyUvzRXhglwDfFVz1Zo6NdbI="
         }
       ]
     },
@@ -2636,7 +2900,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "362"
+          "Value": "2178"
         },
         {
           "Name": "Content-Type",
@@ -2644,11 +2908,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0=\""
+          "Value": "\"rXUGMLzSftoz16rRPocoRTe2gJLqGzuWUwO/aXZzAiE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 26 Feb 2025 17:57:40 GMT"
+          "Value": "Wed, 05 Mar 2025 03:45:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2658,7 +2922,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0="
+          "Value": "sha256-rXUGMLzSftoz16rRPocoRTe2gJLqGzuWUwO/aXZzAiE="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.xnh1y51fo3.css",
+      "AssetFile": "C:\\Users\\maxte\\Source\\Repos\\jria\\makingticket\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2178"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rXUGMLzSftoz16rRPocoRTe2gJLqGzuWUwO/aXZzAiE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 05 Mar 2025 03:45:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xnh1y51fo3"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-rXUGMLzSftoz16rRPocoRTe2gJLqGzuWUwO/aXZzAiE="
         }
       ]
     },

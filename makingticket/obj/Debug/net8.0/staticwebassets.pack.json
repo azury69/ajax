@@ -5,6 +5,18 @@
       "PackagePath": "staticwebassets\\makingticket.4e2c7winv4.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\maxte\\Source\\Repos\\jria\\makingticket\\wwwroot\\css\\auth.css",
+      "PackagePath": "staticwebassets\\css\\auth.css"
+    },
+    {
+      "Id": "C:\\Users\\maxte\\Source\\Repos\\jria\\makingticket\\wwwroot\\css\\createticket.css",
+      "PackagePath": "staticwebassets\\css\\createticket.css"
+    },
+    {
+      "Id": "C:\\Users\\maxte\\Source\\Repos\\jria\\makingticket\\wwwroot\\css\\rolemanagement.css",
+      "PackagePath": "staticwebassets\\css\\rolemanagement.css"
+    },
+    {
       "Id": "C:\\Users\\maxte\\Source\\Repos\\jria\\makingticket\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
