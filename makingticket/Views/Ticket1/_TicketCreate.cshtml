@@ -1,0 +1,48 @@
+﻿@model TicketViewModel
+
+<form id="createTicketForm">
+    <div class="form-group">
+        <label asp-for="NewTicket.Name" class="control-label">Ticket Name</label>
+        <input asp-for="NewTicket.Name" class="form-control" />
+        <span asp-validation-for="NewTicket.Name" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="NewTicket.Description" class="control-label">Description</label>
+        <textarea asp-for="NewTicket.Description" class="form-control"></textarea>
+        <span asp-validation-for="NewTicket.Description" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="NewTicket.AssignedTo" class="control-label">Assign To</label>
+        <select asp-for="NewTicket.AssignedTo" asp-items="Model.UserList" class="form-control">
+            <option value="">Select a User</option>
+        </select>
+        <span asp-validation-for="NewTicket.AssignedTo" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="NewTicket.StoryPoints" class="control-label">Story Points</label>
+        <select asp-for="NewTicket.StoryPoints" class="form-control">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="5">5</option>
+            <option value="8">8</option>
+            <option value="13">13</option>
+        </select>
+        <span asp-validation-for="NewTicket.StoryPoints" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="NewTicket.Status" class="control-label">Status</label>
+        <select asp-for="NewTicket.Status" class="form-control">
+            <option value="Working">Working</option>
+            <option value="Completed">Completed</option>
+        </select>
+        <span asp-validation-for="NewTicket.Status" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Create Ticket</button>
+
+</form>

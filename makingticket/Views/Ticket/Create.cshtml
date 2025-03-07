@@ -1,26 +1,29 @@
-﻿@{
-    Layout = "_Layout";
-}
-@model TicketViewModel
+﻿@model TicketViewModel
 
 <h2>Create Ticket</h2>
 
-<div id="ticketContainer">
-    @await Html.PartialAsync("_TicketCreate", Model)
-</div>
+<!-- Form for submitting multiple tickets -->
+<form id="createTicketsForm">
+    <div id="ticketContainer">
+        @for (var i = 0; i < Model.Tickets.Count; i++)
+        {
+            @await Html.PartialAsync("_TicketCreate", new TicketViewModel { NewTicket = Model.Tickets[i], UserList = Model.UserList })
+        }
+    </div>
 
-<button id="addTicketButton" class="btn btn-secondary">Create New Ticket</button>
+    <button type="button" id="addTicketButton" class="btn btn-secondary">Create New Ticket</button>
+    <button type="submit" class="btn btn-primary">Submit All Tickets</button>
+</form>
 
 <h2>Ticket List</h2>
 
 <div id="listContainer">
-    @await Html.PartialAsync("_TicketList", Model.Tickets)
+    <!-- Initially loading the list via AJAX -->
 </div>
 
 @section Styles {
     <link rel="stylesheet" href="~/css/createticket.css" />
     <style>
-        /* Additional page-specific styles here */
         #ticketContainer {
             display: flex;
             gap: 10px;
@@ -29,10 +32,10 @@
 
         .ticket-form {
             width: 30%;
-        }
-
-        .form-group {
-            width: 100%; /* Ensure fields inside the form take the full width of the form */
+            border: 1px solid #ccc;
+            padding: 15px;
+            border-radius: 5px;
+            background: #f9f9f9;
         }
     </style>
 }
@@ -40,103 +43,45 @@
 @section Scripts {
     <script>
         $(document).ready(function () {
-            // Fetch and render the initial ticket list when the page loads
-            $.ajax({
-                url: "@Url.Action("GetTickets", "Ticket")",  // Action to fetch the ticket list
-                type: "GET",
-                success: function (data) {
-                    // Populate the ticket list in the #listContainer
-                    $("#listContainer").html(data);  // Render the updated ticket list in the container
-                },
-                error: function () {
-                    alert("Error: Unable to fetch ticket list.");
-                }
+            let ticketIndex = $("#ticketContainer .ticket-form").length; // Keep track of ticket indexes
+
+            // Fetch the list of tickets from the database on page load
+            $.get("@Url.Action("GetTicketList", "Ticket")", function (data) {
+                $("#listContainer").html(data);
             });
 
-            // Handle form submission for creating a ticket
-            $("#createTicketForm").submit(function (e) {
-                e.preventDefault(); // Prevent default form submission
-                var formData = $(this).serialize();  // Serialize the form data
-
-                $.ajax({
-                    url: "@Url.Action("Create", "Ticket")",  // The action to call on the server
-                    type: "POST",  // HTTP method (POST)
-                    data: formData,  // The form data to send
-                    success: function (response) {
-                        if (response) {  // Check if the ticket was successfully created
-                            alert("Ticket created successfully!");
-                            $("#createTicketForm")[0].reset();  // Reset the form after creation
-
-                            // Now fetch and update the ticket list
-                            $.ajax({
-                                url: "@Url.Action("GetTickets", "Ticket")",  // Action to get the updated ticket list
-                                type: "GET",
-                                success: function (data) {
-                                    // Update the #listContainer with the new ticket list
-                                    $("#listContainer").html(data);  // Render the updated ticket list in the container
-                                },
-                                error: function () {
-                                    alert("Error: Unable to fetch updated ticket list.");
-                                }
-                            });
-                        } else {
-                            alert("Error occurred while creating the ticket.");
-                        }
-                    },
-                    error: function () {
-                        alert("Error: Unable to submit the form.");
-                    }
-                });
-            });
-
-            // Add new form when "Create New Ticket" is clicked
+            // Add new ticket form dynamically
             $('#addTicketButton').click(function () {
-                var newTicketForm = $('#ticketContainer').children().first().clone();
-
-                // Reset the form fields in the cloned form
-                newTicketForm.find('input, textarea, select').val('');
-
-                // Ensure the cloned form has the correct class for submission
-                newTicketForm.addClass('ticket-form');
-
-                // Append the new form to the container
-                $('#ticketContainer').append(newTicketForm);
+                $.get("@Url.Action("GetCreatePartial", "Ticket")", { index: ticketIndex }, function (data) {
+                    $("#ticketContainer").append(data);
+                    ticketIndex++; // Increment index for next form
+                });
             });
 
-            // Handle dynamic form submissions
-            $('#ticketContainer').on('submit', '.ticket-form', function (e) {
-                e.preventDefault(); // Prevent default form submission
-                var formData = $(this).serialize();  // Serialize the form data
-                var form = $(this); // Get the current form to reset it later
+            // Submit all tickets
+            $("#createTicketsForm").submit(function (e) {
+                e.preventDefault();
+
+                var formData = $(this).serialize(); // Serialize all form data
 
                 $.ajax({
-                    url: "@Url.Action("Create", "Ticket")",  // Action to create the ticket
-                    type: "POST",  // HTTP method (POST)
-                    data: formData,  // The form data to send
+                    url: "@Url.Action("SubmitAll", "Ticket")",
+                    type: "POST",
+                    data: formData,
                     success: function (response) {
-                        if (response) {  // Ticket creation successful
-                            alert("Ticket created successfully!");
-                            form[0].reset();  // Reset the form after creation
-
-                            // Fetch and update the ticket list after form submission
-                            $.ajax({
-                                url: "@Url.Action("GetTickets", "Ticket")",  // Action to get the updated ticket list
-                                type: "GET",
-                                success: function (data) {
-                                    $("#listContainer").html(data);  // Replace the list container with the updated list
-                                },
-                                error: function () {
-                                    alert("Error: Unable to fetch updated ticket list.");
-                                }
-                            });
-                        } else {
-                            alert("Error occurred while creating the ticket.");
-                        }
+                        $("#listContainer").html(response); // Update ticket list
+                        $("#ticketContainer").empty(); // Clear all ticket forms after submission
+                        ticketIndex = 0; // Reset ticket index
                     },
                     error: function () {
-                        alert("Error: Unable to submit the form.");
+                        alert("Error: Unable to submit tickets.");
                     }
                 });
+            });
+
+            // Remove a ticket form
+            $('#ticketContainer').on('click', '.remove-ticket', function () {
+                $(this).closest('.ticket-form').remove();
             });
         });
     </script>

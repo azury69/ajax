@@ -4,6 +4,7 @@ using makingticket.ViewModels;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
+
 namespace makingticket.Controllers
 {
     public class AccountController : Controller
@@ -54,8 +55,27 @@ namespace makingticket.Controllers
 
         // Login GET
         [HttpGet]
-        public IActionResult Login()
+        public async Task<IActionResult> Login()
         {
+            // Check if the user is already authenticated
+            if (User.Identity?.IsAuthenticated == true)
+            {
+                // Get the roles of the authenticated user
+                var user = await _userManager.GetUserAsync(User);
+                var roles = await _userManager.GetRolesAsync(user);
+
+                // Redirect based on role
+                if (roles.Contains("SuperAdmin") || roles.Contains("Admin"))
+                {
+                    return RedirectToAction("Create", "Ticket");
+                }
+                else
+                {
+                    return RedirectToAction("Details", "Ticket");
+                }
+            }
+
+            // If not authenticated, show the login form
             return View();
         }
 

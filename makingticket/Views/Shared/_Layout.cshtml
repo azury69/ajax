@@ -9,16 +9,13 @@
     @await RenderSectionAsync("Styles", required: false)
 </head>
 <body>
-    @if (User?.Identity?.IsAuthenticated == true)
+    @if (User.Identity?.IsAuthenticated == true)
     {
         <!-- Navbar for authenticated users -->
         <header>
             <nav class="navbar navbar-expand-sm navbar-light bg-white border-bottom box-shadow mb-3">
                 <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                    
                     <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                         <ul class="navbar-nav flex-grow-1">
                             @if (User.IsInRole("Admin") || User.IsInRole("SuperAdmin"))
@@ -26,18 +23,15 @@
                                 <li class="nav-item">
                                     <a class="nav-link text-dark" asp-controller="Ticket" asp-action="Create">Create Ticket</a>
                                 </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-controller="Role" asp-action="Index">Role Management</a>
+                                </li>
                             }
                             @if (User.IsInRole("User"))
                             {
                                 <li class="nav-item">
-                                    <a class="nav-link text-dark" asp-controller="Ticket" asp-action="Index">View Tickets</a>
-                                </li>
-                            }
-
-                            @if (User.IsInRole("Admin") || User.IsInRole("SuperAdmin"))
-                            {
-                                <li class="nav-item">
-                                    <a class="nav-link text-dark" asp-controller="Role" asp-action="Index">Role Management</a>
+                                    <a class="nav-link text-dark" asp-controller="Ticket" asp-action="Details">View Tickets</a>
                                 </li>
                             }
                             <li class="nav-item">

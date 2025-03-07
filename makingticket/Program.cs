@@ -24,7 +24,13 @@ builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
 
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 builder.Services.AddControllersWithViews();
-
+builder.Services.ConfigureApplicationCookie(options =>
+{
+    options.ExpireTimeSpan = TimeSpan.FromMinutes(5); ; 
+    options.SlidingExpiration = true; 
+    options.Cookie.HttpOnly = true; 
+    options.Cookie.IsEssential = true; 
+});
 builder.Services.AddRazorPages();
 
 var app = builder.Build();
