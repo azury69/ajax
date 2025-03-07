@@ -9,6 +9,10 @@
             <th>Story Points</th>
             <th>Status</th>
             <th>Created At</th>
+            @if (User.IsInRole("Admin") || User.IsInRole("SuperAdmin"))
+            {
+                <th>Actions</th>  <!-- Add a column for actions (like delete) -->
+            }
         </tr>
     </thead>
     <tbody>
@@ -21,6 +25,13 @@
                 <td>@ticket.StoryPoints</td>
                 <td>@ticket.Status</td>
                 <td>@ticket.CreatedAt.ToString("yyyy-MM-dd HH:mm")</td>
+                @if (User.IsInRole("Admin") || User.IsInRole("SuperAdmin"))
+                {
+                    <td>
+                        <!-- Delete button for admin or superadmin -->
+                        <button type="button" class="btn btn-danger delete-ticket" data-ticket-id="@ticket.Id">Delete</button>
+                    </td>
+                }
             </tr>
         }
     </tbody>

@@ -1,6 +1,7 @@
 ﻿using makingticket.Data;
 using makingticket.Models;
 using makingticket.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using System;
@@ -73,6 +74,21 @@ namespace makingticket.Controllers
 
             var updatedTickets = _context.Ticket.OrderByDescending(t => t.CreatedAt).ToList();
             return PartialView("_TicketList", updatedTickets); // Return updated ticket list after submission
+        }
+        [HttpPost]
+        [Authorize(Roles = "Admin,SuperAdmin")] // Only allow Admin or SuperAdmin to delete tickets
+        public IActionResult DeleteTicket(int ticketId)
+        {
+            var ticket = _context.Ticket.Find(ticketId);
+            if (ticket != null)
+            {
+                _context.Ticket.Remove(ticket);
+                _context.SaveChanges();
+            }
+
+            // After deletion, return updated list of tickets
+            var updatedTickets = _context.Ticket.OrderByDescending(t => t.CreatedAt).ToList();
+            return PartialView("_TicketList", updatedTickets); // Return the updated ticket list
         }
     }
 }

@@ -83,6 +83,22 @@
             $('#ticketContainer').on('click', '.remove-ticket', function () {
                 $(this).closest('.ticket-form').remove();
             });
+            // Delete a ticket
+            $('#listContainer').on('click', '.delete-ticket', function () {
+                var ticketId = $(this).data('ticket-id'); // Get ticket ID from the button's data attribute
+
+                $.ajax({
+                    url: "@Url.Action("DeleteTicket", "Ticket")", // The delete action in the controller
+                    type: "POST",
+                    data: { ticketId: ticketId },
+                    success: function (response) {
+                        $("#listContainer").html(response); // Update ticket list after deletion
+                    },
+                    error: function () {
+                        alert("Error: Unable to delete ticket.");
+                    }
+                });
+            });
         });
     </script>
 }

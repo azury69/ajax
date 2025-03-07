@@ -3,20 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\maxte\\source\\repos\\jria\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{17FAD202-A82C-4325-977D-7AF9EDF6389D}|makingticket\\makingticket.csproj|c:\\users\\maxte\\source\\repos\\jria\\makingticket\\controllers\\ticketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17FAD202-A82C-4325-977D-7AF9EDF6389D}|makingticket\\makingticket.csproj|solutionrelative:makingticket\\controllers\\ticketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{17FAD202-A82C-4325-977D-7AF9EDF6389D}|makingticket\\makingticket.csproj|c:\\users\\maxte\\source\\repos\\jria\\makingticket\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{17FAD202-A82C-4325-977D-7AF9EDF6389D}|makingticket\\makingticket.csproj|solutionrelative:makingticket\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{17FAD202-A82C-4325-977D-7AF9EDF6389D}|makingticket\\makingticket.csproj|c:\\users\\maxte\\source\\repos\\jria\\makingticket\\views\\ticket\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{17FAD202-A82C-4325-977D-7AF9EDF6389D}|makingticket\\makingticket.csproj|solutionrelative:makingticket\\views\\ticket\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17FAD202-A82C-4325-977D-7AF9EDF6389D}|makingticket\\makingticket.csproj|c:\\users\\maxte\\source\\repos\\jria\\makingticket\\views\\ticket\\_ticketcreate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{17FAD202-A82C-4325-977D-7AF9EDF6389D}|makingticket\\makingticket.csproj|solutionrelative:makingticket\\views\\ticket\\_ticketcreate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{17FAD202-A82C-4325-977D-7AF9EDF6389D}|makingticket\\makingticket.csproj|c:\\users\\maxte\\source\\repos\\jria\\makingticket\\wwwroot\\css\\auth.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{17FAD202-A82C-4325-977D-7AF9EDF6389D}|makingticket\\makingticket.csproj|solutionrelative:makingticket\\wwwroot\\css\\auth.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17FAD202-A82C-4325-977D-7AF9EDF6389D}|makingticket\\makingticket.csproj|c:\\users\\maxte\\source\\repos\\jria\\makingticket\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{17FAD202-A82C-4325-977D-7AF9EDF6389D}|makingticket\\makingticket.csproj|solutionrelative:makingticket\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17FAD202-A82C-4325-977D-7AF9EDF6389D}|makingticket\\makingticket.csproj|c:\\users\\maxte\\source\\repos\\jria\\makingticket\\controllers\\ticketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17FAD202-A82C-4325-977D-7AF9EDF6389D}|makingticket\\makingticket.csproj|solutionrelative:makingticket\\controllers\\ticketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{17FAD202-A82C-4325-977D-7AF9EDF6389D}|makingticket\\makingticket.csproj|c:\\users\\maxte\\source\\repos\\jria\\makingticket\\views\\ticket\\_ticketlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{17FAD202-A82C-4325-977D-7AF9EDF6389D}|makingticket\\makingticket.csproj|solutionrelative:makingticket\\views\\ticket\\_ticketlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17FAD202-A82C-4325-977D-7AF9EDF6389D}|makingticket\\makingticket.csproj|c:\\users\\maxte\\source\\repos\\jria\\makingticket\\views\\ticket\\_ticketcreate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{17FAD202-A82C-4325-977D-7AF9EDF6389D}|makingticket\\makingticket.csproj|solutionrelative:makingticket\\views\\ticket\\_ticketcreate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,37 +38,76 @@
       "DocumentGroups": [
         {
           "DockedWidth": 105,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\maxte\\source\\repos\\jria\\makingticket\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "makingticket\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\maxte\\source\\repos\\jria\\makingticket\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "makingticket\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-07T03:29:05.228Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "auth.css",
+              "DocumentMoniker": "C:\\Users\\maxte\\source\\repos\\jria\\makingticket\\wwwroot\\css\\auth.css",
+              "RelativeDocumentMoniker": "makingticket\\wwwroot\\css\\auth.css",
+              "ToolTip": "C:\\Users\\maxte\\source\\repos\\jria\\makingticket\\wwwroot\\css\\auth.css",
+              "RelativeToolTip": "makingticket\\wwwroot\\css\\auth.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-03-07T03:28:51.536Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\maxte\\source\\repos\\jria\\makingticket\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "makingticket\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\maxte\\source\\repos\\jria\\makingticket\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "makingticket\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-03-07T03:28:38.621Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "_TicketList.cshtml",
               "DocumentMoniker": "C:\\Users\\maxte\\source\\repos\\jria\\makingticket\\Views\\Ticket\\_TicketList.cshtml",
               "RelativeDocumentMoniker": "makingticket\\Views\\Ticket\\_TicketList.cshtml",
               "ToolTip": "C:\\Users\\maxte\\source\\repos\\jria\\makingticket\\Views\\Ticket\\_TicketList.cshtml",
               "RelativeToolTip": "makingticket\\Views\\Ticket\\_TicketList.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-03-07T03:21:36.813Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "TicketController.cs",
               "DocumentMoniker": "C:\\Users\\maxte\\source\\repos\\jria\\makingticket\\Controllers\\TicketController.cs",
               "RelativeDocumentMoniker": "makingticket\\Controllers\\TicketController.cs",
               "ToolTip": "C:\\Users\\maxte\\source\\repos\\jria\\makingticket\\Controllers\\TicketController.cs",
               "RelativeToolTip": "makingticket\\Controllers\\TicketController.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAIwDMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAiwFsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-07T03:21:19.11Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "_TicketCreate.cshtml",
               "DocumentMoniker": "C:\\Users\\maxte\\source\\repos\\jria\\makingticket\\Views\\Ticket\\_TicketCreate.cshtml",
               "RelativeDocumentMoniker": "makingticket\\Views\\Ticket\\_TicketCreate.cshtml",
@@ -64,8 +115,7 @@
               "RelativeToolTip": "makingticket\\Views\\Ticket\\_TicketCreate.cshtml",
               "ViewState": "AgIAAB4AAAAAAAAAAAAAAC4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-07T03:20:14.65Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-07T03:20:14.65Z"
             },
             {
               "$type": "Document",
@@ -75,7 +125,7 @@
               "RelativeDocumentMoniker": "makingticket\\Views\\Ticket\\Create.cshtml",
               "ToolTip": "C:\\Users\\maxte\\source\\repos\\jria\\makingticket\\Views\\Ticket\\Create.cshtml",
               "RelativeToolTip": "makingticket\\Views\\Ticket\\Create.cshtml",
-              "ViewState": "AgIAADcAAAAAAAAAAAAcwFgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAcwGQAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-03-07T03:20:03.315Z",
               "EditorCaption": ""
