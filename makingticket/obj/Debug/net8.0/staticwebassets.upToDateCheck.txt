@@ -1,3 +1,10 @@
+wwwroot\angularDetailsSpa\3rdpartylicenses.txt
+wwwroot\angularDetailsSpa\browser\favicon.ico
+wwwroot\angularDetailsSpa\browser\index.html
+wwwroot\angularDetailsSpa\browser\main-FQPADPLZ.js
+wwwroot\angularDetailsSpa\browser\polyfills-FFHMD2TL.js
+wwwroot\angularDetailsSpa\browser\styles-5INURTSO.css
+wwwroot\angularDetailsSpa\prerendered-routes.json
 wwwroot\css\auth.css
 wwwroot\css\createticket.css
 wwwroot\css\rolemanagement.css

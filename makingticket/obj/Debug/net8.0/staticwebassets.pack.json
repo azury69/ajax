@@ -5,6 +5,34 @@
       "PackagePath": "staticwebassets\\makingticket.4e2c7winv4.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\maxte\\Source\\Repos\\jria\\makingticket\\wwwroot\\angularDetailsSpa\\3rdpartylicenses.txt",
+      "PackagePath": "staticwebassets\\angularDetailsSpa\\3rdpartylicenses.txt"
+    },
+    {
+      "Id": "C:\\Users\\maxte\\Source\\Repos\\jria\\makingticket\\wwwroot\\angularDetailsSpa\\browser\\favicon.ico",
+      "PackagePath": "staticwebassets\\angularDetailsSpa\\browser\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\maxte\\Source\\Repos\\jria\\makingticket\\wwwroot\\angularDetailsSpa\\browser\\index.html",
+      "PackagePath": "staticwebassets\\angularDetailsSpa\\browser\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\maxte\\Source\\Repos\\jria\\makingticket\\wwwroot\\angularDetailsSpa\\browser\\main-FQPADPLZ.js",
+      "PackagePath": "staticwebassets\\angularDetailsSpa\\browser\\main-FQPADPLZ.js"
+    },
+    {
+      "Id": "C:\\Users\\maxte\\Source\\Repos\\jria\\makingticket\\wwwroot\\angularDetailsSpa\\browser\\polyfills-FFHMD2TL.js",
+      "PackagePath": "staticwebassets\\angularDetailsSpa\\browser\\polyfills-FFHMD2TL.js"
+    },
+    {
+      "Id": "C:\\Users\\maxte\\Source\\Repos\\jria\\makingticket\\wwwroot\\angularDetailsSpa\\browser\\styles-5INURTSO.css",
+      "PackagePath": "staticwebassets\\angularDetailsSpa\\browser\\styles-5INURTSO.css"
+    },
+    {
+      "Id": "C:\\Users\\maxte\\Source\\Repos\\jria\\makingticket\\wwwroot\\angularDetailsSpa\\prerendered-routes.json",
+      "PackagePath": "staticwebassets\\angularDetailsSpa\\prerendered-routes.json"
+    },
+    {
       "Id": "C:\\Users\\maxte\\Source\\Repos\\jria\\makingticket\\wwwroot\\css\\auth.css",
       "PackagePath": "staticwebassets\\css\\auth.css"
     },

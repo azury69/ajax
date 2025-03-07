@@ -60,7 +60,10 @@ app.UseRouting();
 
 app.UseAuthentication();
 app.UseAuthorization();
-
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapFallbackToFile("/angularDetailsSpa/{*path}", "angularDetailsSpa/browser/index.html");
+});
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Account}/{action=Login}/{id?}");

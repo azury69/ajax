@@ -90,5 +90,14 @@ namespace makingticket.Controllers
             var updatedTickets = _context.Ticket.OrderByDescending(t => t.CreatedAt).ToList();
             return PartialView("_TicketList", updatedTickets); // Return the updated ticket list
         }
+        public IActionResult Details()
+        {
+            return PhysicalFile(
+                Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "angularDetailsSpa", "browser", "index.html"),
+                "text/html"
+            );
+        }
+
+
     }
 }

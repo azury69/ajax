@@ -105,7 +105,9 @@ namespace makingticket.Controllers
                 if (roles.Contains("SuperAdmin") || roles.Contains("Admin"))
                     return RedirectToAction("Create", "Ticket"); 
                 else
-                    return RedirectToAction("Details", "Ticket"); 
+                    //return Redirect("/angularDetailsSpa/");
+                    return RedirectToAction("Details", "Ticket");
+
             }
 
             ViewData["ErrorMessage"] = "Incorrect Password. Try again.";

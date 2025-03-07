@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "eVhTXHfU21IZLts7mzFwhobrYl3hWkDneI97f7eHL7s=",
+  "Hash": "rRbWYUqJefBaK9OEK3tILRpiCTHOKUr3AZClF+Ql8UI=",
   "Source": "makingticket",
   "BasePath": "_content/makingticket",
   "Mode": "Default",
@@ -1317,6 +1317,153 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\maxte\\Source\\Repos\\jria\\makingticket\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\makingticket.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\maxte\\Source\\Repos\\jria\\makingticket\\wwwroot\\angularDetailsSpa\\3rdpartylicenses.txt",
+      "SourceId": "makingticket",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\maxte\\Source\\Repos\\jria\\makingticket\\wwwroot\\",
+      "BasePath": "_content/makingticket",
+      "RelativePath": "angularDetailsSpa/3rdpartylicenses#[.{fingerprint}]?.txt",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ajy2hkq1ho",
+      "Integrity": "qoPuZCUhPC6pKuBbBKRBsdf9YAUIf1jQ3lN5Q4JsESs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\angularDetailsSpa\\3rdpartylicenses.txt"
+    },
+    {
+      "Identity": "C:\\Users\\maxte\\Source\\Repos\\jria\\makingticket\\wwwroot\\angularDetailsSpa\\browser\\favicon.ico",
+      "SourceId": "makingticket",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\maxte\\Source\\Repos\\jria\\makingticket\\wwwroot\\",
+      "BasePath": "_content/makingticket",
+      "RelativePath": "angularDetailsSpa/browser/favicon#[.{fingerprint}]?.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vagikyz9qx",
+      "Integrity": "+RAr6AKXwFKSB2B75Sd7T5C8qJ1lmI+hdxuRx4lOgV8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\angularDetailsSpa\\browser\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\maxte\\Source\\Repos\\jria\\makingticket\\wwwroot\\angularDetailsSpa\\browser\\index.html",
+      "SourceId": "makingticket",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\maxte\\Source\\Repos\\jria\\makingticket\\wwwroot\\",
+      "BasePath": "_content/makingticket",
+      "RelativePath": "angularDetailsSpa/browser/index#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "2wrbn87l7c",
+      "Integrity": "Dld5c1royz/0DSAV1lAKEkPBHyEQ8WLPiYHSfqg3Awo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\angularDetailsSpa\\browser\\index.html"
+    },
+    {
+      "Identity": "C:\\Users\\maxte\\Source\\Repos\\jria\\makingticket\\wwwroot\\angularDetailsSpa\\browser\\main-FQPADPLZ.js",
+      "SourceId": "makingticket",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\maxte\\Source\\Repos\\jria\\makingticket\\wwwroot\\",
+      "BasePath": "_content/makingticket",
+      "RelativePath": "angularDetailsSpa/browser/main-FQPADPLZ#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "l73o03dkju",
+      "Integrity": "QeK8Un27hTgz3EvLlucU9CoJN2Z/xoA8LdXUS0cMpU8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\angularDetailsSpa\\browser\\main-FQPADPLZ.js"
+    },
+    {
+      "Identity": "C:\\Users\\maxte\\Source\\Repos\\jria\\makingticket\\wwwroot\\angularDetailsSpa\\browser\\polyfills-FFHMD2TL.js",
+      "SourceId": "makingticket",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\maxte\\Source\\Repos\\jria\\makingticket\\wwwroot\\",
+      "BasePath": "_content/makingticket",
+      "RelativePath": "angularDetailsSpa/browser/polyfills-FFHMD2TL#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "39tegmrjtp",
+      "Integrity": "adzqBFZD3Q3pmKPNDMu7RrRr/yZRqHpWxzwo6yCOj5g=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\angularDetailsSpa\\browser\\polyfills-FFHMD2TL.js"
+    },
+    {
+      "Identity": "C:\\Users\\maxte\\Source\\Repos\\jria\\makingticket\\wwwroot\\angularDetailsSpa\\browser\\styles-5INURTSO.css",
+      "SourceId": "makingticket",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\maxte\\Source\\Repos\\jria\\makingticket\\wwwroot\\",
+      "BasePath": "_content/makingticket",
+      "RelativePath": "angularDetailsSpa/browser/styles-5INURTSO#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5ipweew5fc",
+      "Integrity": "47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\angularDetailsSpa\\browser\\styles-5INURTSO.css"
+    },
+    {
+      "Identity": "C:\\Users\\maxte\\Source\\Repos\\jria\\makingticket\\wwwroot\\angularDetailsSpa\\prerendered-routes.json",
+      "SourceId": "makingticket",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\maxte\\Source\\Repos\\jria\\makingticket\\wwwroot\\",
+      "BasePath": "_content/makingticket",
+      "RelativePath": "angularDetailsSpa/prerendered-routes#[.{fingerprint}]?.json",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "tvy3j3n584",
+      "Integrity": "p53cyKEVGQ6cGUee02kUdBp9HbdPChFTUp78gHJVBf4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\angularDetailsSpa\\prerendered-routes.json"
     },
     {
       "Identity": "C:\\Users\\maxte\\Source\\Repos\\jria\\makingticket\\wwwroot\\css\\auth.css",
@@ -2643,6 +2790,580 @@
     }
   ],
   "Endpoints": [
+    {
+      "Route": "angularDetailsSpa/3rdpartylicenses.ajy2hkq1ho.txt",
+      "AssetFile": "C:\\Users\\maxte\\Source\\Repos\\jria\\makingticket\\wwwroot\\angularDetailsSpa\\3rdpartylicenses.txt",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18173"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qoPuZCUhPC6pKuBbBKRBsdf9YAUIf1jQ3lN5Q4JsESs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Mar 2025 03:45:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ajy2hkq1ho"
+        },
+        {
+          "Name": "label",
+          "Value": "angularDetailsSpa/3rdpartylicenses.txt"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-qoPuZCUhPC6pKuBbBKRBsdf9YAUIf1jQ3lN5Q4JsESs="
+        }
+      ]
+    },
+    {
+      "Route": "angularDetailsSpa/3rdpartylicenses.txt",
+      "AssetFile": "C:\\Users\\maxte\\Source\\Repos\\jria\\makingticket\\wwwroot\\angularDetailsSpa\\3rdpartylicenses.txt",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18173"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qoPuZCUhPC6pKuBbBKRBsdf9YAUIf1jQ3lN5Q4JsESs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Mar 2025 03:45:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-qoPuZCUhPC6pKuBbBKRBsdf9YAUIf1jQ3lN5Q4JsESs="
+        }
+      ]
+    },
+    {
+      "Route": "angularDetailsSpa/browser/favicon.ico",
+      "AssetFile": "C:\\Users\\maxte\\Source\\Repos\\jria\\makingticket\\wwwroot\\angularDetailsSpa\\browser\\favicon.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "15086"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+RAr6AKXwFKSB2B75Sd7T5C8qJ1lmI+hdxuRx4lOgV8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Mar 2025 03:34:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+RAr6AKXwFKSB2B75Sd7T5C8qJ1lmI+hdxuRx4lOgV8="
+        }
+      ]
+    },
+    {
+      "Route": "angularDetailsSpa/browser/favicon.vagikyz9qx.ico",
+      "AssetFile": "C:\\Users\\maxte\\Source\\Repos\\jria\\makingticket\\wwwroot\\angularDetailsSpa\\browser\\favicon.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "15086"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+RAr6AKXwFKSB2B75Sd7T5C8qJ1lmI+hdxuRx4lOgV8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Mar 2025 03:34:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vagikyz9qx"
+        },
+        {
+          "Name": "label",
+          "Value": "angularDetailsSpa/browser/favicon.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+RAr6AKXwFKSB2B75Sd7T5C8qJ1lmI+hdxuRx4lOgV8="
+        }
+      ]
+    },
+    {
+      "Route": "angularDetailsSpa/browser/index.2wrbn87l7c.html",
+      "AssetFile": "C:\\Users\\maxte\\Source\\Repos\\jria\\makingticket\\wwwroot\\angularDetailsSpa\\browser\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "499"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Dld5c1royz/0DSAV1lAKEkPBHyEQ8WLPiYHSfqg3Awo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Mar 2025 03:45:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2wrbn87l7c"
+        },
+        {
+          "Name": "label",
+          "Value": "angularDetailsSpa/browser/index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Dld5c1royz/0DSAV1lAKEkPBHyEQ8WLPiYHSfqg3Awo="
+        }
+      ]
+    },
+    {
+      "Route": "angularDetailsSpa/browser/index.html",
+      "AssetFile": "C:\\Users\\maxte\\Source\\Repos\\jria\\makingticket\\wwwroot\\angularDetailsSpa\\browser\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "499"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Dld5c1royz/0DSAV1lAKEkPBHyEQ8WLPiYHSfqg3Awo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Mar 2025 03:45:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Dld5c1royz/0DSAV1lAKEkPBHyEQ8WLPiYHSfqg3Awo="
+        }
+      ]
+    },
+    {
+      "Route": "angularDetailsSpa/browser/main-FQPADPLZ.js",
+      "AssetFile": "C:\\Users\\maxte\\Source\\Repos\\jria\\makingticket\\wwwroot\\angularDetailsSpa\\browser\\main-FQPADPLZ.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "208401"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QeK8Un27hTgz3EvLlucU9CoJN2Z/xoA8LdXUS0cMpU8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Mar 2025 03:45:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-QeK8Un27hTgz3EvLlucU9CoJN2Z/xoA8LdXUS0cMpU8="
+        }
+      ]
+    },
+    {
+      "Route": "angularDetailsSpa/browser/main-FQPADPLZ.l73o03dkju.js",
+      "AssetFile": "C:\\Users\\maxte\\Source\\Repos\\jria\\makingticket\\wwwroot\\angularDetailsSpa\\browser\\main-FQPADPLZ.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "208401"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QeK8Un27hTgz3EvLlucU9CoJN2Z/xoA8LdXUS0cMpU8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Mar 2025 03:45:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "l73o03dkju"
+        },
+        {
+          "Name": "label",
+          "Value": "angularDetailsSpa/browser/main-FQPADPLZ.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-QeK8Un27hTgz3EvLlucU9CoJN2Z/xoA8LdXUS0cMpU8="
+        }
+      ]
+    },
+    {
+      "Route": "angularDetailsSpa/browser/polyfills-FFHMD2TL.39tegmrjtp.js",
+      "AssetFile": "C:\\Users\\maxte\\Source\\Repos\\jria\\makingticket\\wwwroot\\angularDetailsSpa\\browser\\polyfills-FFHMD2TL.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "34519"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"adzqBFZD3Q3pmKPNDMu7RrRr/yZRqHpWxzwo6yCOj5g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Mar 2025 03:45:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "39tegmrjtp"
+        },
+        {
+          "Name": "label",
+          "Value": "angularDetailsSpa/browser/polyfills-FFHMD2TL.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-adzqBFZD3Q3pmKPNDMu7RrRr/yZRqHpWxzwo6yCOj5g="
+        }
+      ]
+    },
+    {
+      "Route": "angularDetailsSpa/browser/polyfills-FFHMD2TL.js",
+      "AssetFile": "C:\\Users\\maxte\\Source\\Repos\\jria\\makingticket\\wwwroot\\angularDetailsSpa\\browser\\polyfills-FFHMD2TL.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "34519"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"adzqBFZD3Q3pmKPNDMu7RrRr/yZRqHpWxzwo6yCOj5g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Mar 2025 03:45:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-adzqBFZD3Q3pmKPNDMu7RrRr/yZRqHpWxzwo6yCOj5g="
+        }
+      ]
+    },
+    {
+      "Route": "angularDetailsSpa/browser/styles-5INURTSO.5ipweew5fc.css",
+      "AssetFile": "C:\\Users\\maxte\\Source\\Repos\\jria\\makingticket\\wwwroot\\angularDetailsSpa\\browser\\styles-5INURTSO.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "0"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Mar 2025 03:45:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5ipweew5fc"
+        },
+        {
+          "Name": "label",
+          "Value": "angularDetailsSpa/browser/styles-5INURTSO.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
+        }
+      ]
+    },
+    {
+      "Route": "angularDetailsSpa/browser/styles-5INURTSO.css",
+      "AssetFile": "C:\\Users\\maxte\\Source\\Repos\\jria\\makingticket\\wwwroot\\angularDetailsSpa\\browser\\styles-5INURTSO.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "0"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Mar 2025 03:45:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
+        }
+      ]
+    },
+    {
+      "Route": "angularDetailsSpa/prerendered-routes.json",
+      "AssetFile": "C:\\Users\\maxte\\Source\\Repos\\jria\\makingticket\\wwwroot\\angularDetailsSpa\\prerendered-routes.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"p53cyKEVGQ6cGUee02kUdBp9HbdPChFTUp78gHJVBf4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Mar 2025 03:45:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-p53cyKEVGQ6cGUee02kUdBp9HbdPChFTUp78gHJVBf4="
+        }
+      ]
+    },
+    {
+      "Route": "angularDetailsSpa/prerendered-routes.tvy3j3n584.json",
+      "AssetFile": "C:\\Users\\maxte\\Source\\Repos\\jria\\makingticket\\wwwroot\\angularDetailsSpa\\prerendered-routes.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"p53cyKEVGQ6cGUee02kUdBp9HbdPChFTUp78gHJVBf4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Mar 2025 03:45:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tvy3j3n584"
+        },
+        {
+          "Name": "label",
+          "Value": "angularDetailsSpa/prerendered-routes.json"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-p53cyKEVGQ6cGUee02kUdBp9HbdPChFTUp78gHJVBf4="
+        }
+      ]
+    },
     {
       "Route": "css/auth.css",
       "AssetFile": "C:\\Users\\maxte\\Source\\Repos\\jria\\makingticket\\wwwroot\\css\\auth.css",
