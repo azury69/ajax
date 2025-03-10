@@ -1,46 +1,99 @@
-﻿@model TicketViewModel
+﻿@model makingticket.ViewModels.TicketCreateViewModel
 
 <div class="ticket-form">
-    <div class="form-group">
-        <label>Ticket Name</label>
-        <input type="text" name="Tickets[@ViewData["Index"]].Name" class="form-control" required />
-    </div>
+    <h3>Create Ticket</h3>
 
-    <div class="form-group">
-        <label>Description</label>
-        <textarea name="Tickets[@ViewData["Index"]].Description" class="form-control" required></textarea>
-    </div>
+    <form asp-action="Create" method="post">
+        <!-- Ticket Name -->
+        <div class="form-group">
+            <label for="Name">Ticket Name</label>
+            <input type="text" id="Name" name="Ticket.Name" class="form-control" required />
+        </div>
 
-    <div class="form-group">
-        <label>Assign To</label>
-        <select name="Tickets[@ViewData["Index"]].AssignedTo" class="form-control">
-            <option value="">Select a User</option>
-            @foreach (var user in Model.UserList)
-            {
-                <option value="@user.Value">@user.Text</option>
-            }
-        </select>
-    </div>
+        <!-- Description -->
+        <div class="form-group">
+            <label for="Description">Description</label>
+            <textarea id="Description" name="Ticket.Description" class="form-control" required></textarea>
+        </div>
 
-    <div class="form-group">
-        <label>Story Points</label>
-        <select name="Tickets[@ViewData["Index"]].StoryPoints" class="form-control">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="5">5</option>
-            <option value="8">8</option>
-            <option value="13">13</option>
-        </select>
-    </div>
+        <!-- Assign To -->
+        <div class="form-group">
+            <label for="AssignedTo">Assign To</label>
+            <select id="AssignedTo" name="Ticket.AssignedTo" class="form-control">
+                <option value="">Select a User</option>
+                @foreach (var user in Model.UserList)
+                {
+                    <option value="@user.Value">@user.Text</option>
+                }
+            </select>
+        </div>
 
-    <div class="form-group">
-        <label>Status</label>
-        <select name="Tickets[@ViewData["Index"]].Status" class="form-control">
-            <option value="Working">Working</option>
-            <option value="Completed">Completed</option>
-        </select>
-    </div>
+        <!-- Story Points -->
+        <div class="form-group">
+            <label for="StoryPoints">Story Points</label>
+            <select id="StoryPoints" name="Ticket.StoryPoints" class="form-control">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="5">5</option>
+                <option value="8">8</option>
+                <option value="13">13</option>
+            </select>
+        </div>
 
-    <button type="button" class="remove-ticket btn btn-danger">Remove</button>
+        <!-- Priority -->
+        <div class="form-group">
+            <label for="Priority">Priority</label>
+            <select id="Priority" name="Ticket.Priority" class="form-control">
+                <option value="0">Low</option>
+                <option value="1">Medium</option>
+                <option value="2">High</option>
+                <option value="3">Critical</option>
+            </select>
+        </div>
+
+        <!-- Status -->
+        <div class="form-group">
+            <label for="Status">Status</label>
+            <select id="Status" name="Ticket.Status" class="form-control">
+                <option value="0">New</option>
+                <option value="1">InProgress</option>
+                <option value="2">Resolved</option>
+                <option value="3">Done</option>
+            </select>
+        </div>
+
+        <!-- Due Date -->
+        <div class="form-group">
+            <label for="DueDate">Due Date</label>
+            <input type="date" id="DueDate" name="Ticket.DueDate" class="form-control" />
+        </div>
+
+        <!-- Labels -->
+        <div class="form-group">
+            <label for="Labels">Labels</label>
+            <input type="text" id="Labels" name="Ticket.Labels" class="form-control" />
+        </div>
+
+        <!-- Epic -->
+        <div class="form-group">
+            <label for="Epic">Epic</label>
+            <input type="text" id="Epic" name="Ticket.Epic" class="form-control" />
+        </div>
+
+        @* <!-- Attachments --> *@
+        @* <div class="form-group"> *@
+        @*     <label for="Attachments">Attachments</label> *@
+        @*     <input type="file" id="Attachments" name="Ticket.Attachments" class="form-control" multiple /> *@
+        @* </div> *@
+
+        <!-- Comments (optional) -->
+        <div class="form-group">
+            <label for="Comments">Comments</label>
+            <textarea id="Comments" name="Ticket.Comments" class="form-control"></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-primary">Create Ticket</button>
+    </form>
 </div>

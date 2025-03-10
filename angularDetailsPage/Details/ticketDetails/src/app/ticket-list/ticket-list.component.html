@@ -1,0 +1,6 @@
+<h2>Tickets</h2>
+<ul>
+  <li *ngFor="let ticket of tickets">
+    <a [routerLink]="['/ticket-detail', ticket.id]">{{ ticket.name }}</a>
+  </li>
+</ul>

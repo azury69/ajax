@@ -1,0 +1,9 @@
+<div *ngIf="ticket">
+    <h2>{{ ticket.name }} - Details</h2>
+    <p><strong>Description:</strong> {{ ticket.description }}</p>
+    <p><strong>Assigned To:</strong> {{ ticket.assignedTo }}</p>
+    <p><strong>Status:</strong> {{ ticket.status }}</p>
+    <p><strong>Story Points:</strong> {{ ticket.storyPoints }}</p>
+    <p><strong>Created At:</strong> {{ ticket.createdAt | date }}</p>
+  </div>
+  

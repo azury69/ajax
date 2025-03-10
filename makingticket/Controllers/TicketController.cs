@@ -4,6 +4,7 @@ using makingticket.ViewModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -59,16 +60,23 @@ namespace makingticket.Controllers
             {
                 foreach (var ticket in model.Tickets)
                 {
-                    _context.Ticket.Add(new Ticket
+                    var newTicket = new Ticket
                     {
                         Name = ticket.Name,
                         Description = ticket.Description,
                         AssignedTo = ticket.AssignedTo,
+                        Priority = ticket.Priority, // Store priority (Low, Medium, High, Critical)
                         StoryPoints = ticket.StoryPoints,
-                        Status = ticket.Status,
-                        CreatedAt = DateTime.Now
-                    });
+                        Status = ticket.Status, // Store status (New, InProgress, Resolved, Done)
+                        DueDate = ticket.DueDate, // Optional due date
+                        CreatedAt = DateTime.Now,
+                        Labels = ticket.Labels, // Store any labels (tags)
+                        Attachments = ticket.Attachments, // Store any attachments
+                    };
+
+                    _context.Ticket.Add(newTicket);
                 }
+
                 _context.SaveChanges();
             }
 
@@ -92,12 +100,12 @@ namespace makingticket.Controllers
         }
         public IActionResult Details()
         {
-            return PhysicalFile(
-                Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "angularDetailsSpa", "browser", "index.html"),
-                "text/html"
-            );
+            return View();
+            //return PhysicalFile(
+            //    Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "angularDetailsSpa", "browser", "index.html"),
+            //    "text/html"
+            //);
+
         }
-
-
     }
 }

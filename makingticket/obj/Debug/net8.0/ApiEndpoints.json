@@ -1,1 +1,74 @@
-[]
+[
+  {
+    "ContainingType": "makingticket.Controllers.TicketController",
+    "Method": "GetTicket",
+    "RelativePath": "{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "makingticket.Models.Ticket",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "makingticket.Controllers.TicketViewModelEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapTicketViewModelEndpoints\u003Eb__0_0",
+    "RelativePath": "api/TicketViewModel/",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "TicketViewModel"
+    ],
+    "EndpointName": "GetAllTicketViewModels"
+  },
+  {
+    "ContainingType": "makingticket.Controllers.TicketViewModelEndpoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapTicketViewModelEndpoints\u003Eb__0_1",
+    "RelativePath": "api/TicketViewModel/{id}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "TicketViewModel"
+    ],
+    "EndpointName": "GetTicketViewModelById"
+  }
+]
